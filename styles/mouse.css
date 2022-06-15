@@ -1,0 +1,81 @@
+.mouse, .mouse-guide, .mouse-mid {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, border-width 0.1s, opacity 0.1s;
+  transition-delay: 0.05s;
+  z-index: 2;
+}
+
+.mouse {
+  opacity: 0.4;
+  width: 40px;
+  height: 40px;
+  border: 20px solid #444758;
+}
+
+.mouse-mid {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+
+.mouse-guide {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+}
+
+.center {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  cursor: none;
+  position: center;
+  color: #ffffff;
+  animation: vanish 5s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.footer {
+  right: 1rem;
+  bottom: 2rem;
+  position: absolute;
+}
+.footer img {
+  width: 2.5rem;
+  transition: opacity 0.5s;
+}
+.footer img:hover {
+  opacity: 0.5;
+}
+
+.legal {
+  cursor: none;
+  left: 1rem;
+  opacity: 0.4;
+  color: #ffffff;
+  bottom: 2.35rem;
+  position: absolute;
+  font-weight: 20000;
+}
+
+h1 {
+  cursor: none;
+  font-family:"Futura",Trebuchet MS,Arial,sans-serif; 
+  left: 1rem;
+  color: #ffffff;
+  font-weight: 20000;
+}
